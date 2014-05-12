@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">ShadowDuel</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title">Shadow Duel</string>
     <string name="action_settings">Settings</string>
-
+	<string name="play">Gioca</string>
+	<string name="deck">Mazzo</string>
+	<string name="catalogue">Collezione</string>
+	<string name="exit">Esci</string>
+	<string name="returns">Indietro</string>
+	<string name="login">Login</string>
+	
 </resources>

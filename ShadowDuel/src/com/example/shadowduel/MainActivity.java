@@ -1,21 +1,28 @@
 package com.example.shadowduel;
 
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
@@ -23,9 +30,22 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+       
+        addListenerOnButton();
     }
-
-
+    
+    public void addListenerOnButton() {
+		 
+		final Context context = this;
+		Button buttonLogin = (Button) findViewById(R.id.buttonLogin);
+		buttonLogin.setOnClickListener(new  OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					Intent intent = new Intent(context,ActivityMenu.class);
+					startActivity(intent);
+				}
+			});
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         
@@ -61,5 +81,4 @@ public class MainActivity extends ActionBarActivity {
             return rootView;
         }
     }
-
 }
