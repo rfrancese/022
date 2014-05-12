@@ -10,5 +10,6 @@
 	<string name="exit">Esci</string>
 	<string name="returns">Indietro</string>
 	<string name="login">Login</string>
-	
+	<string name="username">Username</string>
+	<string name="password">Password</string>
 </resources>
