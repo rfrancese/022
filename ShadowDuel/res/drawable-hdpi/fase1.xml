@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <transition>
+ <item android:drawable="@drawable/fase1_grey" />
+  <item android:drawable="@drawable/fase1_blu" />
+  </transition>
+
+</animation-list>

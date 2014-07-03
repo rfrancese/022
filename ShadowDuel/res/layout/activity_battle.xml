@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo_v"
+    android:orientation="vertical"
+
+     >
+<LinearLayout
+		   	android:id="@+id/enemystat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    >
+		    		    		<TextView
+		    android:id="@+id/enemyattword"
+		    android:text="@string/attword"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="60dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    		<TextView
+		    android:id="@+id/enemyatt"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="30dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+
+		    		<TextView
+		    android:id="@+id/enemydifword"
+		    android:text="@string/difword"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="50dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    		<TextView
+		    android:id="@+id/enemydif"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="30dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    						    	
+		    		  </LinearLayout>
+
+		<LinearLayout 
+		android:id= "@+id/enemyhand"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:gravity="center_horizontal"
+        >
+	        <View
+	        android:id="@+id/enemyhand1"
+	                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	        android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:background="@drawable/c_0"
+			
+	        />
+
+	        <View
+	        android:id="@+id/enemyhand2"
+	                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/c_0"
+	        
+	        />
+
+	        <View
+	        android:id="@+id/enemyhand3"
+	                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	        android:layout_marginRight="5dp"
+       	 	android:background="@drawable/c_0"
+	        />
+
+	        <View
+	      	android:id="@+id/enemyhand4"
+	      	        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/c_0"
+	        />
+
+	        <View
+	        android:id="@+id/enemyhand5"
+	                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	        android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/c_0"
+	         />
+
+		</LinearLayout>
+
+		    
+		    
+		<LinearLayout
+		    android:id="@+id/myhand"
+		   
+		    android:layout_width="fill_parent"
+		   android:layout_height="fill_parent"
+		    
+		    android:gravity="center_horizontal"
+		    android:orientation="horizontal"
+		    >
+
+		    <Button
+		        android:id="@+id/myhand1"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp" />
+
+		    <View
+		        android:id="@+id/framehand1"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="-65dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp"
+		        android:background="@drawable/frame" />
+
+		    <Button
+		        android:id="@+id/myhand2"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp" />
+
+		    <View
+		        android:id="@+id/framehand2"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="-65dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp"
+		        android:background="@drawable/frame" />
+
+		    <Button
+		        android:id="@+id/myhand3"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp" />
+
+		    <View
+		        android:id="@+id/framehand3"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="-65dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp"
+		        android:background="@drawable/frame" />
+
+		    <Button
+		        android:id="@+id/myhand4"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp" />
+
+		    <View
+		        android:id="@+id/framehand4"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="-65dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp"
+		        android:background="@drawable/frame" />
+
+		    <Button
+		        android:id="@+id/myhand5"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="105dp"
+		        android:padding="5dp" />
+
+		    <View
+		        android:id="@+id/framehand5"
+		                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		        android:layout_marginLeft="-65dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="110dp"
+		        android:background="@drawable/frame" />
+		</LinearLayout>
+
+
+
+	
+		    	<LinearLayout
+		    	    android:id="@+id/mystat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    >
+		    		    		<TextView
+		    android:id="@+id/myattword"
+		    android:text="@string/attword"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="60dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    		<TextView
+		    android:id="@+id/myatt"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="30dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+
+		    		<TextView
+		    android:id="@+id/mydifword"
+		    android:text="@string/difword"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="50dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    		<TextView
+		    android:id="@+id/mydif"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_width="30dp"
+		    android:layout_height="20dp"
+		    android:singleLine="true"
+		    android:textStyle="bold" />
+		    						    		<Button
+		    android:id="@+id/button_gioca"
+		    android:layout_width="60dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_height="35dp"
+		    android:background="@drawable/gioca_game" />
+		    		  </LinearLayout>
+
+
+</LinearLayout>
