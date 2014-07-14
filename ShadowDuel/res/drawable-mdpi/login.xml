@@ -5,8 +5,8 @@
 
  android:state_focused="false"
  android:state_pressed="true"
- android:drawable="@drawable/login_gold_red" />
+ android:drawable="@drawable/login_blu_click" />
 
-  <item android:drawable="@drawable/login_gold" /> 
+  <item android:drawable="@drawable/login_blu" /> 
   </selector>
 

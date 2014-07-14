@@ -29,13 +29,15 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class ActivityRegister extends Activity {
-	 
+	private String connPath="http://shadowduel.altervista.org";
+	private String connPathalt="http://shadowduel.netne.net";
 	// Valori di username e password inseriti dall'utente dal JSON
 	public String username = "";
 	public String password = "";
@@ -68,19 +70,22 @@ public class ActivityRegister extends Activity {
 
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
+	    	//connPath=connPathalt;
+
 			super.onCreate(savedInstanceState);
 	        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			setContentView(R.layout.activity_register);
-			
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
 	        usernameView=(EditText)this.findViewById(R.id.usernamer);
 	        passwordView=(EditText)this.findViewById(R.id.passwordr);
 	        repasswordView=(EditText)this.findViewById(R.id.passwordr2);
 	        emailView=(EditText)this.findViewById(R.id.emailr);
 	        
-	        usernameView.setTextColor(Color.parseColor("#F5DC49"));
-	        passwordView.setTextColor(Color.parseColor("#F5DC49"));
-	        repasswordView.setTextColor(Color.parseColor("#F5DC49"));
-	        emailView.setTextColor(Color.parseColor("#F5DC49"));
+	        usernameView.setTextColor(Color.BLACK);
+	        passwordView.setTextColor(Color.BLACK);
+	        repasswordView.setTextColor(Color.BLACK);
+	        emailView.setTextColor(Color.BLACK);
 	        
 			addListenerOnButton();
 		    
@@ -229,9 +234,8 @@ public class ActivityRegister extends Activity {
 			    if((usernameView.getText().toString()).equalsIgnoreCase(username) && md5(md5(passwordView.getText().toString())).equals(password) && (emailView.getText().toString()).equals(email)){
 			    
 			    	Toast.makeText(ActivityRegister.this, "Registrazione effettuata con successo.",Toast.LENGTH_LONG).show();
-			           
-			    	Intent intent = new Intent(context,MainActivity.class);
-					startActivity(intent);
+			        finish();   
+			    	
 			    	
 					
 	        	}
@@ -247,6 +251,11 @@ public class ActivityRegister extends Activity {
 	        }
 
 	    }   
+	    @Override
+public void onDestroy(){
+			getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+	    	super.onDestroy();
+	    }
 		
 	}

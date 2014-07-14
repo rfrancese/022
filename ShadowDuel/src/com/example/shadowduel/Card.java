@@ -4,7 +4,7 @@ public class Card {
 
 	private int id;
 	private String name;
-	//private String type;
+	private	String type;
 	//private int dna;
 	//private int evolp;
 	private int att;
@@ -12,12 +12,12 @@ public class Card {
 	private int idimg;
 	
 
-	public Card(int idimg,int id,String name,int att,int dif) {
+	public Card(int idimg,int id,String name,int att,int dif,String type) {
 		// TODO Auto-generated constructor stub
 		this.idimg=idimg;
 		this.id=id;
 		this.name=name;
-		//this.type=type;
+		this.type=type;
 		//this.dna=dna;
 		//this.evolp=evolp;
 		this.att=att;
@@ -32,9 +32,9 @@ public class Card {
 	public String getName() {
 		return this.name;
 	}
-//	public String getType() {
-//		return this.type;
-//	}
+	public String getType() {
+		return this.type;
+	}
 //	public int getDna() {
 //		return this.dna;
 //	}

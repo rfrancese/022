@@ -10,6 +10,15 @@
 	<string name="exit">Esci</string>
 	<string name="returns">Indietro</string>
 	<string name="login">Login</string>
-	<string name="username">Username</string>
-	<string name="password">Password</string>
+	<string name="username">username</string>
+	<string name="password">password</string>
+	<string name="email">email</string>
+	<string name="passwordre">re-enter password</string>
+	<string name="att">att</string>
+	<string name="dif">dif</string>
+	<string name="attword">Attacco</string>
+	<string name="difword">Difesa</string>
+
+				
+	
 </resources>

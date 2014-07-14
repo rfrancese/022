@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sfondo_v"
+    android:background="@drawable/sfondo2"
     android:orientation="vertical"
 
      >
@@ -11,42 +11,53 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="30dp"
 		    >
-		    		    		<TextView
-		    android:id="@+id/enemyattword"
-		    android:text="@string/attword"
-		    android:layout_marginLeft="25dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="60dp"
-		    android:layout_height="20dp"
-		    android:singleLine="true"
-		    android:textStyle="bold" />
-		    		<TextView
-		    android:id="@+id/enemyatt"
-		    android:layout_marginLeft="5dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="30dp"
-		    android:layout_height="20dp"
-		    android:singleLine="true"
-		    android:textStyle="bold" />
 
-		    		<TextView
-		    android:id="@+id/enemydifword"
-		    android:text="@string/difword"
-		    android:layout_marginLeft="25dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="50dp"
-		    android:layout_height="20dp"
+		    				   <TextView
+		    android:id="@+id/enemyatt"
+		    android:background="@drawable/attack"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="40dp"
+		    android:layout_height="25dp"
 		    android:singleLine="true"
-		    android:textStyle="bold" />
+		    android:textStyle="bold" 
+		   	android:gravity="center" />
+	
 		    		<TextView
 		    android:id="@+id/enemydif"
-		    android:layout_marginLeft="5dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="30dp"
-		    android:layout_height="20dp"
+		    android:background="@drawable/defense"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="40dp"
+		    android:layout_height="25dp"
 		    android:singleLine="true"
-		    android:textStyle="bold" />
-		    						    	
+		    android:textStyle="bold"
+		    android:gravity="center" />
+		    						
+		    				    		<View
+		    android:id="@+id/enemystar1"
+		    android:background="@drawable/blu_star"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"/>
+		    				    		<View
+		    android:id="@+id/enemystar2"
+		    android:background="@drawable/blu_star"
+		    android:layout_marginLeft="2dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"/>	
+		    
+		    				    			<TextView
+		    android:id="@+id/enemyname"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="25dp"
+		    android:singleLine="true"
+		    android:textStyle="bold"
+		    android:gravity="left" />
 		    		  </LinearLayout>
 
 		<LinearLayout 
@@ -103,100 +114,165 @@
 
 		</LinearLayout>
 
+		    <LinearLayout
+		    android:id="@+id/myhandplaceholder"
+		   
+		    android:layout_width="wrap_content"
+		   android:layout_height="0dp"
 		    
+		    android:gravity="center_horizontal"
+		    android:orientation="horizontal"
+		    >
+		        <View
+		        android:id="@+id/placeholder1"
+		        android:layout_width="match_parent"
+		        android:layout_marginRight="5dp"
+        		android:layout_height="0dp"
+		         />
+		     	<View
+		        android:id="@+id/placeholder2"
+		        android:layout_width="match_parent"
+		        android:layout_marginRight="5dp"
+        		android:layout_height="0dp"
+		         />		    
+		          <View
+		        android:id="@+id/placeholder3"
+		        android:layout_width="match_parent"
+		        android:layout_marginRight="5dp"
+        		android:layout_height="0dp"
+		         />		     
+		         <View
+		        android:id="@+id/placeholder4"
+		        android:layout_width="match_parent"
+		        android:layout_marginRight="5dp"
+        		android:layout_height="0dp"
+		         />		    
+		          <View
+		        android:id="@+id/placeholder5"
+		        android:layout_width="match_parent"
+        		android:layout_height="0dp"
+		         />
 		    
-		<LinearLayout
+		    </LinearLayout>
+		    
+		<RelativeLayout
 		    android:id="@+id/myhand"
 		   
 		    android:layout_width="fill_parent"
 		   android:layout_height="fill_parent"
 		    
 		    android:gravity="center_horizontal"
-		    android:orientation="horizontal"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="3dp"
+		    		    android:layout_marginRight="3dp"
+		    
 		    >
-
+	        			<View
+		    android:id="@+id/myhandholder"
+		   
+		    android:layout_width="match_parent"
+		   android:layout_height="160dp"
+		    android:padding="1dp"
+		    >
+		    </View>
+			
 		    <Button
 		        android:id="@+id/myhand1"
+		        android:layout_below="@+id/myhandholder"
+		       
 		                android:layout_width="match_parent"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="5dp"
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp" />
+		        />
 
 		    <View
 		        android:id="@+id/framehand1"
 		                android:layout_width="match_parent"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="-65dp"
+		     
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp"
-		        android:background="@drawable/frame" />
+		        android:background="@drawable/frame"
+		         />
 
 		    <Button
 		        android:id="@+id/myhand2"
 		                android:layout_width="match_parent"
+		                android:layout_below="@+id/myhandholder"
+		                android:layout_toRightOf="@+id/myhand1"
         android:layout_height="match_parent"
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp" />
+		        />
 
 		    <View
 		        android:id="@+id/framehand2"
 		                android:layout_width="match_parent"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="-65dp"
+        android:layout_toRightOf="@+id/myhand1"
+		       
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp"
-		        android:background="@drawable/frame" />
+		        android:background="@drawable/frame" 
+		        />
 
 		    <Button
 		        android:id="@+id/myhand3"
 		                android:layout_width="match_parent"
+		                android:layout_toRightOf="@+id/myhand2"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp" />
+		        />
 
 		    <View
 		        android:id="@+id/framehand3"
 		                android:layout_width="match_parent"
+		                android:layout_toRightOf="@+id/myhand2"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="-65dp"
+		        
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp"
-		        android:background="@drawable/frame" />
+		        android:background="@drawable/frame" 
+		        />
 
 		    <Button
 		        android:id="@+id/myhand4"
 		                android:layout_width="match_parent"
+		                android:layout_toRightOf="@+id/myhand3"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp" />
+		        />
 
 		    <View
 		        android:id="@+id/framehand4"
 		                android:layout_width="match_parent"
+		                android:layout_below="@+id/myhandholder"
+		                android:layout_toRightOf="@+id/myhand3"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="-65dp"
+		        
 		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp"
-		        android:background="@drawable/frame" />
+		        android:background="@drawable/frame"
+		         />
 
 		    <Button
 		        android:id="@+id/myhand5"
 		                android:layout_width="match_parent"
+		                android:layout_toRightOf="@+id/myhand4"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
-		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="105dp"
-		        android:padding="5dp" />
+		        />
 
 		    <View
 		        android:id="@+id/framehand5"
 		                android:layout_width="match_parent"
+		                android:layout_toRightOf="@+id/myhand4"
+		                android:layout_below="@+id/myhandholder"
         android:layout_height="match_parent"
-		        android:layout_marginLeft="-65dp"
-		        android:layout_marginRight="5dp"
-		        android:layout_marginTop="110dp"
-		        android:background="@drawable/frame" />
-		</LinearLayout>
+		      
+		        android:background="@drawable/frame"
+		         />
+		</RelativeLayout>
 
 
 
@@ -206,41 +282,45 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="40dp"
 		    >
-		    		    		<TextView
-		    android:id="@+id/myattword"
-		    android:text="@string/attword"
-		    android:layout_marginLeft="25dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="60dp"
-		    android:layout_height="20dp"
-		    android:singleLine="true"
-		    android:textStyle="bold" />
-		    		<TextView
+
+		    				   <TextView
 		    android:id="@+id/myatt"
+		    android:background="@drawable/attack"
 		    android:layout_marginLeft="5dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="30dp"
-		    android:layout_height="20dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="40dp"
+		    android:layout_height="25dp"
 		    android:singleLine="true"
-		    android:textStyle="bold" />
+		    android:textStyle="bold" 
+		   	android:gravity="center" />
+
 
 		    		<TextView
-		    android:id="@+id/mydifword"
-		    android:text="@string/difword"
-		    android:layout_marginLeft="25dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="50dp"
-		    android:layout_height="20dp"
-		    android:singleLine="true"
-		    android:textStyle="bold" />
-		    		<TextView
 		    android:id="@+id/mydif"
-		    android:layout_marginLeft="5dp"
-		    android:layout_marginTop="5dp"
-		    android:layout_width="30dp"
-		    android:layout_height="20dp"
+		    android:background="@drawable/defense"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="2dp"
+		    android:layout_width="40dp"
+		    android:layout_height="25dp"
 		    android:singleLine="true"
-		    android:textStyle="bold" />
+		    android:textStyle="bold"
+		    android:gravity="center" />
+		    		
+		    		<View
+		    android:id="@+id/mystar1"
+		    android:background="@drawable/blu_star"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="8dp"
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"/>
+		    				    		<View
+		    android:id="@+id/mystar2"
+		    android:background="@drawable/blu_star"
+		    android:layout_marginLeft="2dp"
+		    android:layout_marginTop="8dp"
+		    android:layout_width="25dp"
+		    android:layout_height="25dp"/>
+		    		
 		    						    		<Button
 		    android:id="@+id/button_gioca"
 		    android:layout_width="60dp"

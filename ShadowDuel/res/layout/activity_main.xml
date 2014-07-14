@@ -1,41 +1,100 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    
+
 
     android:id="@+id/container"
-    android:background="@drawable/sfondomain_nobutton"
-    android:layout_width="fill_parent"
+    android:background="@drawable/sfondo2"
+    android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"	
+    android:orientation="vertical"
     android:gravity="center_horizontal">
+<View
+    android:id="@+id/holderlogin"
+        android:background="@drawable/title"
+    
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:layout_height="100dp"
+        android:layout_width="fill_parent"
+    
+    android:layout_marginTop="10dp"
+    />
+    
 
+<View
+    
+    android:id="@+id/holdermain1"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="50dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
                 <EditText
                 android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:textStyle="italic"
                 android:hint="@string/username"
                 android:maxLines="1"
-                android:singleLine="true" />
-    
-    
+                android:singleLine="true"
+				android:layout_width="250dp"
+                android:layout_height="40dp"   
+                                android:background="#ffffff"       
+                     
+					/>
+
+
                 <EditText
+                    android:textStyle="italic"
                 android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
                 android:hint="@string/password"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/password"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
- 
+                android:singleLine="true"
+                                android:background="#ffffff"       
+                
+                 />
+<View
+    
+    android:id="@+id/holdermain2"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="50dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
     <Button
     android:id="@+id/buttonLogin"
-    android:layout_marginBottom="30dp"
 	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-    android:text="@string/login"
+	android:layout_height="100dp"
+    android:background="@drawable/login"
+    />
+    <View
+    
+    android:id="@+id/holdermain3"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="50dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
+         
+   <Button
+    android:id="@+id/buttonRegister"
+	android:layout_width="wrap_content"
+	android:layout_height="100dp"
+	android:background="@drawable/registrati"
          />
-    
-    
+
 </LinearLayout>

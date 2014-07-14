@@ -1,38 +1,125 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     
-    android:background="@drawable/sfondomain_nobutton"
+    android:background="@drawable/sfondo2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"	
     android:gravity="center_horizontal">
 
+<View
+    android:id="@+id/titlemenu"
+        android:background="@drawable/title"
+    
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:layout_height="100dp"
+        android:layout_width="fill_parent"
+    
+    android:layout_marginTop="10dp"
+    />
+<View
+    
+    android:id="@+id/holdermenu"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="10dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"	
+    android:gravity="center_horizontal">
+    
+    
+
     <Button
-    android:layout_marginTop="50dp"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
+	android:layout_width="130dp"
+	android:layout_height="60dp"
     android:id="@+id/buttonStartGame"
         android:background="@drawable/gioca"
+        
          />
-<Button
- android:id="@+id/buttonExit"
- android:layout_width="fill_parent"
- android:layout_height="wrap_content"
- android:text="@string/exit"/>
+<View
+    
+    android:id="@+id/holdermenu1"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="15dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
 
 <Button
  android:id="@+id/buttonDeck"
- android:layout_width="fill_parent"
- android:layout_height="wrap_content"
- android:text="@string/deck"/>
-
-<Button
- android:id="@+id/buttonCatalogue"
- android:layout_width="fill_parent"
- android:layout_height="wrap_content"
- android:text="@string/catalogue"/>
-
-
-
+ android:layout_width="140dp"
+ android:layout_height="60dp"
+   android:background="@drawable/mazzo"
+   
+ />
+<View
     
+    android:id="@+id/holdermenu2"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="15dp"
+        android:layout_width="fill_parent"
+    
+    ></View>
+<Button 
+ android:id="@+id/buttonCatalogue"
+ android:layout_width="200dp"
+ android:layout_height="60dp"
+   android:background="@drawable/catalogo"
+   
+ />
+
+<View
+    
+    android:id="@+id/holdermenu3"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="15dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
+    <Button
+	android:layout_width="130dp"
+	android:layout_height="60dp"
+    android:id="@+id/buttonAmici"
+        android:background="@drawable/amici"
+        
+         />
+    <View
+    
+    android:id="@+id/holdermenu4"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:background="#00000000"
+    android:layout_height="15dp"
+        android:layout_width="wrap_content"
+    
+    ></View>
+<Button
+ android:id="@+id/buttonExit"
+ android:layout_width="110dp"
+ android:layout_height="60dp"
+   android:background="@drawable/esci"
+   
+/>
+
+
+    </LinearLayout>
 </LinearLayout>
 

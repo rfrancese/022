@@ -3,21 +3,33 @@
 
 
    
-    android:background="@drawable/sfondomain_nobutton"
+    android:background="@drawable/sfondo2"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal">
-
+<View
+    android:id="@+id/holderlogin2"
+        android:background="@drawable/title"
+    
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:alpha="0.94"
+    android:layout_height="100dp"
+        android:layout_width="fill_parent"
+    
+    android:layout_marginTop="10dp"
+    />
                 <EditText
                 android:id="@+id/usernamer"
                 android:textStyle="italic"
-                android:layout_marginTop="160dp"
+                android:layout_marginTop="60dp"
                 android:hint="@string/username"
                 android:maxLines="1"
                 android:singleLine="true"
 				android:layout_width="250dp"
-                android:layout_height="40dp"         
+                android:layout_height="40dp"  
+                android:background="#ffffff"       
 					/>
 
 
@@ -33,7 +45,8 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:background="#ffffff" />
                   
                                 <EditText
                 android:textStyle="italic"
@@ -47,7 +60,8 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:background="#ffffff" />
                 
                 <EditText
                 android:textStyle="italic"
@@ -61,13 +75,15 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true" 
+                android:background="#ffffff"/>
 
     <Button
     android:id="@+id/buttonRegister"
     android:layout_marginBottom="30dp"
 	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
+	android:layout_marginTop="20dp"
+	android:layout_height="40dp"
    android:background="@drawable/registrati"
          />
 

@@ -5,7 +5,7 @@
 
  android:state_focused="false"
  android:state_pressed="true"
- android:drawable="@drawable/esci_gold_red" />
+ android:drawable="@drawable/esci_blu_click" />
 
-  <item android:drawable="@drawable/esci_gold" /> 
+  <item android:drawable="@drawable/esci_blu" /> 
   </selector>

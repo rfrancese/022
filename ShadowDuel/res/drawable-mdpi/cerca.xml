@@ -3,9 +3,9 @@
 
 <item
 
- android:state_focused="false"
+ android:state_focused="true"
  android:state_pressed="true"
- android:drawable="@drawable/cerca_gold_red" />
+ android:drawable="@drawable/cerca_blu_click" />
 
-  <item android:drawable="@drawable/cerca_gold" /> 
+  <item android:drawable="@drawable/cerca_blu" /> 
   </selector>

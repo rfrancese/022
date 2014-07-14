@@ -2,10 +2,18 @@
     <selector xmlns:android="http://schemas.android.com/apk/res/android"	>
 
 <item
-
+android:state_enabled="true"
  android:state_focused="false"
  android:state_pressed="true"
- android:drawable="@drawable/gioca_selected" />
+ android:drawable="@drawable/gioca_blu_click_game" />
+<item
 
-  <item android:drawable="@drawable/gioca_attivo" /> 
+ android:state_enabled="false"
+ android:drawable="@drawable/gioca_blu_click_game" />
+
+
+  <item 
+      android:state_enabled="true"
+      android:drawable="@drawable/gioca_blu_game" 
+      /> 
   </selector>

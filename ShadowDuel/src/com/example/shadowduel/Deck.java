@@ -27,12 +27,13 @@ public class Deck {
 	public Integer[] deck={0,11,2,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,50};
 	public ArrayList<Card> Deck;
 	public ArrayList<Card> currDeck;
-
+	private String connPath="http://shadowduel.altervista.org";
+	private String connPathalt="http://shadowduel.netne.net";
 	private Random rand;
 	private int LENGHT;
 	private int currlenght;
 	private ArrayList<Card> hand;
-	private Card provacard= new Card(1, 1, "drago", 3, 2);
+	private Card provacard= new Card(1, 1, "drago", 3, 2,"acqua");
 
 	public static JSONArray jsArray = null;
 	public HttpPost httpPost;
@@ -45,6 +46,8 @@ public class Deck {
 	
 	
 	public Deck(String username){
+    	connPath=connPathalt;
+
 		Deck=new ArrayList<Card>();
 		currDeck=new ArrayList<Card>();
 		hand = new ArrayList<Card>();
@@ -167,7 +170,7 @@ public class DeckTask extends AsyncTask<Void, Void, Boolean> {
     public void sendUserAndGetJsonFromUrl() throws JSONException, InterruptedException {
         
     	String json = null;
-    	String url = "http://shadowduel.altervista.org/app/app_user_deck.php";	
+    	String url = connPath+"/app/app_user_deck.php";	
 
 
 	 
@@ -208,7 +211,9 @@ public class DeckTask extends AsyncTask<Void, Void, Boolean> {
       	       Deck.add(new Card(1, 1,
       	    		   jsonArray.getJSONObject(i).getString("name") , 
       	    		   jsonArray.getJSONObject(i).getInt("attack"),
-      	    		   jsonArray.getJSONObject(i).getInt("defense")));
+      	    		   jsonArray.getJSONObject(i).getInt("defense"),
+      	    		 jsonArray.getJSONObject(i).getString("element")
+      	    		   ));
       	    }
       	   currDeck=Deck;
    		LENGHT=deck.length;

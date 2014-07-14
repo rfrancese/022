@@ -5,7 +5,7 @@
 
  android:state_focused="false"
  android:state_pressed="true"
- android:drawable="@drawable/catalogo_gold_red" />
+ android:drawable="@drawable/catalogo_blu_click" />
 
-  <item android:drawable="@drawable/catalogo_gold" /> 
+  <item android:drawable="@drawable/catalogo_blu" /> 
   </selector>

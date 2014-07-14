@@ -5,7 +5,7 @@
 
  android:state_focused="false"
  android:state_pressed="true"
- android:drawable="@drawable/amici_gold_red_soon" />
+ android:drawable="@drawable/amici_blu_click" />
 
-  <item android:drawable="@drawable/amici_gold_soon" /> 
+  <item android:drawable="@drawable/amici_blu" /> 
   </selector>
